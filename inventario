@@ -1,0 +1,9 @@
+---
+jenkins:
+  hosts:
+    agent1:
+      ansible_host: ubuntu
+    agent2:
+      ansible_host: centos7
+  vars:
+    ansible_user: vincent
