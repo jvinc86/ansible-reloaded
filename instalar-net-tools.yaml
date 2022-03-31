@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Instalar herramienta net-tools
+      package:
+        name: net-tools
+        state: present
