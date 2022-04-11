@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Instalar TREE en Ubuntu y Debian
+    package:
+      name:
+        - tree
+        - git
+        - curl
+        - "{{ apache }}"
+      state: latest
