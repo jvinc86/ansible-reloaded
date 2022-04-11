@@ -1,0 +1,14 @@
+---
+web:
+  hosts:
+    ubuntu2:
+      ansible_host: 192.168.33.15
+  vars:
+    apache: apache2
+
+bd:
+  hosts:
+    supercentos:
+      ansible_host: 192.168.33.40
+  vars:
+    apache: httpd
